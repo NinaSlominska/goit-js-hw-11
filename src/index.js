@@ -25,6 +25,7 @@ async function onLoadMore(event) {
 
 async function onSearch(event) {
     event.preventDefault()
+    loadMore.classList.add('visually-hidden')
     page = 1
     gallery.innerHTML = ''
     if (!input.value.trim()) {
